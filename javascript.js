@@ -1,0 +1,1 @@
+<categorias onclick="windows.open('Muebles.html', '_blank')">Muebles</categorias>
