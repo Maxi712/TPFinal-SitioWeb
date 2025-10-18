@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset='utf-8'>
+    <title>Contacto</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <link rel='stylesheet' type='text/css' href='Estilo.css'>
+</head>
+
+<body>
+    <header>
+        <nav class="menu-flexbox">
+            <a href="PaginaPrincipal.html">Inicio</a>
+            <a href="Muebles/Muebles.html">Muebles</a>
+            <a href="Electrodomesticos/Electrodomesticos.html">Electrodomesticos</a>
+            <a href="Tecnologia/Tecnologia.html">Tecnologia</a>
+            <a href="Contacto.html">Contacto</a>
+        </nav>
+    </header>
+    <h1>Formulario de Contacto</h1>
+    <form id="formularioContacto" onsubmit="return validarFormulario(event)">
+        <div>
+            <label for="nombre">Nombre Completo (*)</label>
+            <input type="text" id="nombre" name="nombre:" maxlength="50" required>
+            <span class="error-mensaje" id="errorNombre"></span>
+        </div>
+        <div>
+            <label for="email">GMail (*)</label>
+            <input type="email" id="email" name="email:" required>
+            <span class="error-mensaje" id="errorEmail"></span>
+        </div>
+        <div>
+            <label for="mensaje">Mensaje (*)</label>
+            <textarea id="mensaje" name="mensaje:" required></textarea>
+            <span class="error-mensaje" id="errorMensaje"></span>
+        </div>
+        <button type="submit">Enviar consulta</button>
+    </form>
+    <div id="resultadoValidacion"></div>
+    <script src="javascript.js"></script>
+</body>
+
+</html>
