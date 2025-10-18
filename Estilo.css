@@ -1,0 +1,51 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background-color: gainsboro;
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3 {
+    color: dodgerblue;
+    padding: 10px 0;
+    margin-bottom: 5px;
+}
+
+.menu-flexbox {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0);
+    padding: 15px 20px;
+}
+
+.menu-flexbox a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.menu-flexbox a:hover {
+    background-color: dodgerblue;
+}
+
+#carrusel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 900px;
+}
+
+#imagenCarrusel {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+}
