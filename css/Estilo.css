@@ -1,38 +1,37 @@
-body {
+body>div {
     font-family: Arial, Helvetica, sans-serif;
-    line-height: 1.6;
-    background-color: gainsboro;
-    color: black;
-    margin: 0;
-    padding: 0;
+    background-color: rgba(0, 0, 0);
+    padding: 15px 20px;
+    width: 80%;
+    max-width: 600px;
+    margin-top: 20px;
+    border: 1px solid gold;
+    border-radius: 15px;
+    display: flex;
 }
 
 h1,
 h2,
 h3 {
-    color: dodgerblue;
-    padding: 10px 0;
-    margin-bottom: 5px;
+    text-align: center;
+    color: gold;
+    padding-bottom: 5px;
+    margin-top: 0;
+
 }
 
-.menu-flexbox {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: rgba(0, 0, 0, 0);
-    padding: 15px 20px;
-}
-
-.menu-flexbox a {
-    color: white;
+body>div a {
+    color: gold;
     text-decoration: none;
-    padding: 5px 15px;
+    padding: 10px 20px;
     border-radius: 5px;
     transition: background-color 0.3s;
+    margin: 0 10px;
 }
 
-.menu-flexbox a:hover {
-    background-color: dodgerblue;
+body>div a:hover {
+    background-color: rgb(255, 215, 0, 0.2);
+    color: white;
 }
 
 #carrusel {
@@ -48,4 +47,15 @@ h3 {
     width: 100%;
     height: auto;
     max-height: 400px;
+}
+
+
+textarea {
+    width: 50%;
+    padding: 8px;
+    margin-bottom: 8px;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 1px solid gold;
+    background-color: rgb(255, 213, 0);
 }
