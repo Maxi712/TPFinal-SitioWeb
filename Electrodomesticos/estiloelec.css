@@ -1,0 +1,25 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background-color: gainsboro;
+    color: black;
+    margin: 0;
+    padding: 30px;
+}
+#h1 {
+    display: flex;
+    padding: 10px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 10px ;
+    box-shadow: 3px 3px 15px;
+   
+    width: 700px;
+}
+
+
+#info {
+    display:flexbox;
+    flex-direction: column;
+    padding: 10px;
+}
