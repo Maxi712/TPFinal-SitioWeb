@@ -1,12 +1,10 @@
-body>div {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: rgba(0, 0, 0);
-    padding: 15px 20px;
-    width: 80%;
-    max-width: 600px;
-    margin-top: 20px;
-    border: 1px solid gold;
-    border-radius: 15px;
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: black;
+    margin: 0;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
     display: flex;
 }
 
@@ -20,7 +18,20 @@ h3 {
 
 }
 
-body>div a {
+.menu-flexbox {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0);
+    padding: 15px 20px;
+    width: 80%;
+    max-width: 600px;
+    margin-top: 20px;
+    border: 1px solid gold;
+    border-radius: 15px;
+}
+
+.menu-flexbox a {
     color: gold;
     text-decoration: none;
     padding: 10px 20px;
@@ -29,7 +40,7 @@ body>div a {
     margin: 0 10px;
 }
 
-body>div a:hover {
+.menu-flexbox a:hover {
     background-color: rgb(255, 215, 0, 0.2);
     color: white;
 }
