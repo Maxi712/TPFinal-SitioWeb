@@ -12,10 +12,10 @@
 <body>
     <header>
         <nav class="menu-flexbox">
-            <a href="PaginaPrincipal.html">Inicio</a>
-            <a href="Muebles/Muebles.html">Muebles</a>
-            <a href="Electrodomesticos/Electrodomesticos.html">Electrodomesticos</a>
-            <a href="Tecnologia/Tecnologia.html">Tecnologia</a>
+            <a href="../PaginaPrincipal.html">Inicio</a>
+            <a href="../Muebles/Muebles.html">Muebles</a>
+            <a href="../Electrodomesticos/Electrodomesticos.html">Electrodomesticos</a>
+            <a href="../Tecnologia/Tecnologia.html">Tecnologia</a>
             <a href="Contacto.html">Contacto</a>
         </nav>
     </header>
@@ -23,17 +23,17 @@
     <form id="formularioContacto" onsubmit="return validarFormulario(event)">
         <div>
             <label for="nombre">Nombre Completo (*)</label>
-            <input type="text" id="nombre" name="nombre:" maxlength="50" required>
+            <input type="text" id="nombre" name="nombre:" maxlength="50" required><br>
             <span class="error-mensaje" id="errorNombre"></span>
         </div>
         <div>
             <label for="email">GMail (*)</label>
-            <input type="email" id="email" name="email:" required>
+            <input type="email" id="email" name="email:" required><br>
             <span class="error-mensaje" id="errorEmail"></span>
         </div>
         <div>
             <label for="mensaje">Mensaje (*)</label>
-            <textarea id="mensaje" name="mensaje:" required></textarea>
+            <textarea id="mensaje" name="mensaje:" required></textarea><br>
             <span class="error-mensaje" id="errorMensaje"></span>
         </div>
         <button type="submit">Enviar consulta</button>
