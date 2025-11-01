@@ -13,13 +13,18 @@ body {
     border: 1px solid black;
     border-radius: 10px ;
     box-shadow: 3px 3px 15px;
-   
     width: 700px;
 }
 
 
-#info {
+.info {
     display:flexbox;
+    flex-direction: column;
+    padding: 10px;
+}
+
+form{
+    display:flex;
     flex-direction: column;
     padding: 10px;
 }
