@@ -5,26 +5,56 @@ body {
     color: black;
     margin: 0;
     padding: 30px;
+    padding-left: 30px;
 }
-#h1 {
+#comprare{
+    padding-left: 400px;
+}
+.producto{
     display: flex;
-    padding: 10px;
     background-color: white;
     border: 1px solid black;
     border-radius: 10px ;
     box-shadow: 3px 3px 15px;
     width: 700px;
 }
-
-
-.info {
-    display:flexbox;
-    flex-direction: column;
+img{
+    align-content: center;
     padding: 10px;
 }
 
-form{
+.info {
     display:flex;
     flex-direction: column;
     padding: 10px;
+}
+form{
+    display: flexbox;
+    
+    
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 10px ;
+    box-shadow: 3px 3px 15px;
+    width: 100vh;
+    height: 170vh;
+    padding: 10px;
+}
+
+input{
+    width: 200px;
+    
+}
+#ima{
+    padding-left: 160px;
+}
+#text{
+    display: flexbox;
+    align-items: end;
+    
+    
+}
+button{
+    
+    justify-content: space-between 100px;
 }
