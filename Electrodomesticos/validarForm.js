@@ -50,4 +50,6 @@ function validar (event){
         resultadoValidacion.innerHTML='Formulario valido'
         resultadoValidacion.style.color='green'
     }
+    
+
 }
