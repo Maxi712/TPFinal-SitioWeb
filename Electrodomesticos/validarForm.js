@@ -43,9 +43,6 @@ function validar (event){
     if (!correo.test(gmail)&&gmail!=''){
         error.push('Correo no valido')
     }
-
-
-
     if(error.length > 0){
         resultadoValidacion.innerHTML=error.join('<br>')
         resultadoValidacion.style.color='red'
