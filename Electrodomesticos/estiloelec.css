@@ -30,15 +30,13 @@ img{
 }
 form{
     display: flexbox;
-    
-    
     background-color: white;
     border: 1px solid black;
     border-radius: 10px ;
     box-shadow: 3px 3px 15px;
     width: 100vh;
     height: 170vh;
-    padding: 10px;
+    padding: 50px;
 }
 
 input{
@@ -48,13 +46,20 @@ input{
 #ima{
     padding-left: 160px;
 }
-#text{
-    display: flexbox;
-    align-items: end;
-    
-    
+.campo{
+    display:flex;
+    justify-content: space-between;
+    align-items: flex-end;
 }
-button{
-    
-    justify-content: space-between 100px;
+.campo label{
+    width: 200px;
+}
+.campo input{
+    width: 500px;
+}
+.boton{
+    display: flex;
+    justify-content: space-between ;
+    margin-top: 30px;
+    height: 50px;
 }

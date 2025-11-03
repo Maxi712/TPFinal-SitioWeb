@@ -7,36 +7,54 @@
     <title>Comprar</title>
 </head>
 <body id="comprare">
-    <div id="f">
+    <div>
         <h2>Formulario de Compra:</h2>
-        <form >
+        <form id="formulario" novalidate>
             <img id="ima" src="" alt="proselec" width="400" height="430">
             <h3>Descripcion:</h3>
             <p id="desc"></p>
             <p id="mar"></p>
             <p id="pre"></p>
             <h3>Datos:</h3>
-            <label>Ingrese nombre y apellido:</label>
-            <input type="text" id="text" name="text"><br><br>
-            <label>Correo electronico:</label>
-            <input type="email" id="text" name="text"><br><br>
-            <label>Telefono:</label>
-            <input type="text" id="text" name="text"><br><br>
+            <div class="campo">
+                <label>Ingrese nombre y apellido:</label>
+                <input type="text" id="nombre" name="nombre"><br><br>
+            </div>
+            <div class="campo">
+                <label>Correo electronico:</label>
+                <input type="email" id="gmail" name="gmail"><br><br>
+            </div>
+            <div class="campo">
+                <label>Telefono:</label>
+                <input type="text" id="fono" name="fono"><br><br>
+            </div>
             <h3>Direccion:</h3>
-            <label>Calle y numero:</label>
-            <input type="text" id="text" name="text"><br><br>
-            <label>Ciudad:</label>
-            <input type="text" id="text" name="text"><br><br>
-            <label>Codigo postal:</label>
-            <input type="text" id="text" name="text"><br><br>
-            <label>Provincia:</label>
-            <input type="text" id="text" name="text"><br><br>
+            <div class="campo">
+                <label>Calle y numero:</label>
+                <input type="text" id="calle" name="calle"><br><br>
+            </div>
+            <div class="campo">
+                <label>Ciudad:</label>
+                <input type="text" id="ciudad" name="ciudad"><br><br>
+            </div>
+            <div class="campo">
+                <label>Codigo postal:</label>
+                <input type="text" id="cod" name="cod"><br><br>
+            </div>
+            <div class="campo">
+                <label>Provincia:</label>
+                <input type="text" id="pro" name="pro"><br><br>
+            </div>
+            <div class="boton">
             <input type="button" value="Cancelar">
-            <input type="button" value="Comprar">
+            <input type="submit" value="Comprar">
+            </div>
+            <p id="resultadoValidacion"></p>
         </form>
     </div>
     <img id ="producto" src="" alt="">
 
     <script src="jselec.js"></script>
+    <script src="validarForm.js"></script>
 </body>
 </html>
