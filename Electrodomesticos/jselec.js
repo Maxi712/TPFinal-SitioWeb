@@ -1,6 +1,8 @@
 let link=document.createElement("a")
 
-
+function cancelar(){
+    window.location.href='Electrodomesticos.html'
+}
 function comprar(img,desc,marca,pre){
     localStorage.setItem("proselec", img)
     localStorage.setItem("descselec", desc)
@@ -28,6 +30,20 @@ function comprar(img,desc,marca,pre){
         document.getElementById('pre').textContent='Precio:'+precio
     }
 })
+
+function filtrarPor(filtro){
+    let producto=document.querySelectorAll('.producto')
+    for (let i=0;i<producto.length;i++){
+        let marca=producto[i].dataset.marca
+        if(marca===filtro||marca==='marca'){
+            producto[i].style.display='flex'
+        }else{
+            producto[i].style.display='none'
+        }
+        
+    }
+
+}
 
 
 

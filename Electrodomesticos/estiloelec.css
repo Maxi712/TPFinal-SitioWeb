@@ -5,10 +5,14 @@ body {
     color: black;
     margin: 0;
     padding: 30px;
-    padding-left: 30px;
+    
 }
 #comprare{
     padding-left: 400px;
+}
+.fila{
+    display: flex;
+    justify-content: space-between 10px;
 }
 .producto{
     display: flex;
@@ -17,6 +21,8 @@ body {
     border-radius: 10px ;
     box-shadow: 3px 3px 15px;
     width: 700px;
+    padding: 10px;
+    margin-right: 20px;
 }
 img{
     align-content: center;
