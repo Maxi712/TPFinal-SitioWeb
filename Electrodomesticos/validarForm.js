@@ -39,7 +39,7 @@ function validar (event){
         error.push('En codigo postal solo se permiten numeros')
     }
 
-    const correo = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    const correo = /^[^\s@]+[^\s@]+\.[^\s@]+$/
     if (!correo.test(gmail)&&gmail!=''){
         error.push('Correo no valido')
     }

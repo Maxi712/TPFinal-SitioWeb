@@ -9,8 +9,12 @@
     <h2>Tecnologia</h2>
     <textarea>buscar productos</textarea>
     <h3><a href="OfertasTecno.html" title="Ver ofertas">Ofertas</a></h3>
-    <h3><a href="CuponesTecno.html" title="Ver cupones">Cupones</a></h3>
-    <h3><a href="../pages/Asistencia.html" title="Ir a asistencia">Asistencia</a></h3>
+        <select id="categoria" onchange="categorias(this.value)">
+            <option value="cat" selected disabled hidden >Otras categorias:</option>
+            <option value="electrodomestico" title="Ir a muebles">Muebles</option>
+            <option value="tecnologia" title="Ir a electrodomesticos">Electrodomesticos</option>
+        </select>
+    <h3><a href="../pages/Contacto.html" tittle="Ir a contacto">Contacto</a></h3>
 </head>
 
 <body>
@@ -40,7 +44,7 @@
         <option value="pc">PC</option>
 
     </select>
-
+    <script src="jselect.js"></script>
 </body>
 
 </html>

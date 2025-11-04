@@ -9,8 +9,12 @@
     <h2>Electrodomesticos</h2>
     <textarea>buscar productos</textarea>
     <h3><a href="OfertasElectro.html" title="Ver ofertas">Ofertas</a></h3>
-    <h3><a href="CuponesElectro.html" title="Ver cupones">Cupones</a></h3>
-    <h3><a href="../pages/Asistencia.html" title="Ir a asistencia">Asistencia</a></h3>
+    <select id="categoria" onchange="categorias(this.value)">
+        <option value="cat" selected disabled hidden>Otras categorias:</option>
+        <option value="mueble" title="Ir a muebles">Muebles</option>
+        <option value="electrodomestico" title="Ir a electrodomesticos">Electrodomesticos</option>
+    </select>
+    <h3><a href="../pages/Contacto.html" title="Ir a contacto">Contacto</a></h3>
 
 </head>
 
@@ -18,7 +22,7 @@
     <div filtro>
         <p>Filtrar por:</p>
         <select onchange="filtrarPor(this.value)" id="marc" name="marc" title="Seleccione marca">
-            <option value="marca" selected disable>Marca:</option>
+            <option value="marca" selected disable hidden>Marca:</option>
             <option value="Liliana">Liliana</option>
             <option value="Philipps">Philipps</option>
             <option value="Lg">LG</option>
@@ -26,20 +30,20 @@
             <option value="Florencia">Florencia</option>
 
         </select>
-        <select id="tipo" name="tipo" title="Seleccione electrodomestico">
-            <option value="tipo" selected disable>Electrodomestico:</option>
-            <option value="aire">Aire acondicionado</option>
-            <option value="heladera">Heladera</option>
-            <option value="ventilador">Ventilador</option>
-            <option value="cocina">Cocina</option>
-            <option value="micro">Microondas</option>
-            <option value="licuadora">Licuadora</option>
-            <option value="lavarropas">Lavarropas</option>
+        <select onchange="filtrarPorT(this.value)" id="tipo" name="tipo" title="Seleccione electrodomestico">
+            <option value="tipo" selected disable hidden>Electrodomestico:</option>
+            <option value="Aire">Aire acondicionado</option>
+            <option value="Heladera">Heladera</option>
+            <option value="Ventilador">Ventilador</option>
+            <option value="Cocina">Cocina</option>
+            <option value="Micro">Microondas</option>
+            <option value="Licuadora">Licuadora</option>
+            <option value="Lavarropas">Lavarropas</option>
 
         </select>
     <br>
     <div class="fila">
-        <div class="producto" data-marca="Philco">
+        <div class="producto" data-marca="Philco" data-tipo="Heladera">
             <div id="heladerap">
             <img id="img" width="250" height="300" src="../img/heladerap.webp">
                 <div id="info">
@@ -50,7 +54,7 @@
                 </div>
             </div>
         </div>
-        <div class="producto" data-marca="Florencia">
+        <div class="producto" data-marca="Florencia" data-tipo="Cocina">
             <div id="cocinaf" >
                 <img id="img" width="250" height="300" src="../img/cocinaf.webp">
                 <div id="info">

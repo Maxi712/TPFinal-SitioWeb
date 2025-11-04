@@ -11,13 +11,16 @@
 <body>
     <h1>Tienda</h1>
     <textarea>Buscar productos</textarea>
-    <h2>Categorias:</h2>
+    <h2>Menu:</h2>
     <div class="menu-flexbox">
-        <a href="Muebles/Muebles.html" target="_blank" title="Ir a muebles">
-            Muebles</a>
-        <a href="Electrodomesticos/Electrodomesticos.html" target="_blank"
-            title="Ir a electrodomesticos">Electrodomesticos</a>
-        <a href="Tecnologia/Tecnologia.html" target="_blank" title="Ir a tecnologia">Tecnologia</a>
+        <select id="categoria" onchange="categorias(this.value)">
+            <option value="cat" selected disabled hidden>Categorias:</option>
+            <option value="mueble" title="Ir a muebles">Muebles</option>
+            <option value="electrodomestico" title="Ir a electrodomesticos">Electrodomesticos</option>
+            <option value="tecnologia" title="Ir a tecnologia">Tecnologia</option>
+        </select>
+        <a href="pages/Contacto.html" target="_blank"title="Ir a contacto">Contacto</a>
+        <a href="pages/Asistencia.html" target="_blank" title="Ir a informacion">Informacion</a>
     </div>
     <section id="carrusel">
         <button id="btnAnterior">&lt;</button>
@@ -25,6 +28,7 @@
         <button id="btnSiguiente">&gt;</button>
     </section>
     <script src="js/carrusel.js"></script>
+    <script src="js/select.js"></script>
 </body>
 
 

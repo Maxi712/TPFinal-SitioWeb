@@ -30,12 +30,12 @@ function comprar(img,desc,marca,pre){
         document.getElementById('pre').textContent='Precio:'+precio
     }
 })
-
+//filtros
 function filtrarPor(filtro){
     let producto=document.querySelectorAll('.producto')
     for (let i=0;i<producto.length;i++){
         let marca=producto[i].dataset.marca
-        if(marca===filtro||marca==='marca'){
+        if(marca===filtro){
             producto[i].style.display='flex'
         }else{
             producto[i].style.display='none'
@@ -43,6 +43,26 @@ function filtrarPor(filtro){
         
     }
 
+}
+function filtrarPorT(filtro){
+    let producto=document.querySelectorAll('.producto')
+    for (let i=0;i<producto.length;i++){
+        let tipo=producto[i].dataset.tipo
+        if(tipo===filtro){
+            producto[i].style.display='flex'
+        }else{
+            producto[i].style.display='none'
+        }
+        
+    }
+
+}
+function categorias(cat){
+    if(cat==='mueble'){
+        window.location.href="../Muebles/Muebles.html"
+    }else if(cat==='tecnologia'){
+        window.location.href="../Tecnologia/Tecnologia.html"
+    }
 }
 
 
