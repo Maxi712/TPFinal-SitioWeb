@@ -1,5 +1,4 @@
 function categorias(cat){
-    console.log('categoria', cat)
     if(cat==='electrodomestico'){
         window.location.href="../Electrodomesticos/Electrodomesticos.html"
     }else if(cat==='tecnologia'){
