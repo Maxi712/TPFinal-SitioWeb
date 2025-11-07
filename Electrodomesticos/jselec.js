@@ -65,25 +65,22 @@ function categorias(cat){
     }
 }
 //buscador
-function buscador(){
-    let cont=0
-    const pa=document.createElement('p')
-    const items=document.querySelectorAll('#listar li')
-    pa.textContent='No se encontro la busqueda'
-    let producto=document.querySelectorAll ('.producto')
-    for (let i=0;i<producto.length;i++){
-        let b=producto[i].dataset.tipo
-        if(items==b){
-            cont++
+const buscador=document.getElementById('buscador')
+document.addEventListener('input',b=>{
+    if (b.target===buscador){
+        const valor= buscador.value.toLowerCase()
+        const producto=document.querySelectorAll('.producto')
+        for (let i=0;i<producto.length;i++){
+        let tipo=producto[i].dataset.tipo.toLowerCase()
+        if(valor===tipo){
             producto[i].style.display='flex'
-        }else if(items!=b){
+        }else{
             producto[i].style.display='none'
         }
+        
     }
-    if(cont==0){
-        pa
     }
-}
+})
 
 
 
