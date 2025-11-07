@@ -1,71 +1,120 @@
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     line-height: 1.6;
-    background-color: gainsboro;
-    color: black;
+    background-color: black;
+    color: gold;
     margin: 0;
     padding: 30px;
-    
+
 }
-#comprare{
+
+#comprare {
     padding-left: 400px;
 }
-.fila{
+
+.fila {
     display: flex;
     justify-content: space-between 10px;
 }
-.producto{
+
+.producto {
     display: flex;
-    background-color: white;
-    border: 1px solid black;
-    border-radius: 10px ;
+    background-color: black;
+    border: 1px solid gold;
+    border-radius: 10px;
     box-shadow: 3px 3px 15px;
     width: 700px;
     padding: 10px;
     margin-right: 20px;
 }
-img{
+
+img {
     align-content: center;
     padding: 10px;
 }
 
 .info {
-    display:flex;
+    display: flex;
     flex-direction: column;
     padding: 10px;
 }
-form{
+
+form {
     display: flexbox;
-    background-color: white;
-    border: 1px solid black;
-    border-radius: 10px ;
+    background-color: black;
+    border: 1px solid gold;
+    border-radius: 10px;
     box-shadow: 3px 3px 15px;
     width: 100vh;
     height: 170vh;
     padding: 50px;
 }
 
-input{
+input {
     width: 200px;
-    
+
 }
-#ima{
+
+#ima {
     padding-left: 160px;
 }
-.campo{
-    display:flex;
+
+.campo {
+    display: flex;
     justify-content: space-between;
     align-items: flex-end;
 }
-.campo label{
+
+.campo label {
     width: 200px;
 }
-.campo input{
+
+.campo input {
     width: 500px;
 }
-.boton{
+
+.boton {
     display: flex;
-    justify-content: space-between ;
+    justify-content: space-between;
     margin-top: 30px;
     height: 50px;
+}
+
+button {
+    display: flex;
+    background-color: gold;
+    color: black;
+    border: none;
+    padding: 5px 5px;
+    border-radius: 7px;
+    transition: background-color 0.3s;
+    font-size: 16px;
+    justify-content: space-between;
+}
+
+button:hover {
+    background-color: rgba(255, 217, 0, 0.743);
+    text-decoration: underline;
+}
+
+.producto a {
+    color: gold;
+    text-decoration: none;
+    padding: 10px 5px;
+    border-radius: 5px;
+    margin: 0 17px;
+    font-size: 0.9em;
+    text-decoration: none;
+}
+
+.producto a:hover {
+    text-decoration: underline;
+}
+
+h2 a,
+h3 a {
+    text-align: center;
+    color: gold;
+    padding-bottom: 5px;
+    margin-top: 0;
 }
