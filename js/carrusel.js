@@ -1,11 +1,13 @@
 const imagenes = [
-
+    'img/heladerap.webp',
+    'img/cocinaf.webp'
 ];
 let indiceActual = 0;
 const imagenElemento = document.getElementById('imagenCarrusel');
 const totalImagenes = imagenes.length;
 function actualizarImagen() {
     imagenElemento.src = imagenes[indiceActual];
+    imagenElemento.onclick=()=>window.open('Electrodomesticos/comprare.html')
 }
 function siguienteImagen() {
     indiceActual = (indiceActual + 1) % totalImagenes;
@@ -28,4 +30,3 @@ document.addEventListener('DOMContentLoaded', () => {
         btnAnterior.addEventListener('click', anteriorImagen);
     }
 });
-<categorias onclick="windows.open('Muebles.html', '_blank')">Muebles</categorias>
