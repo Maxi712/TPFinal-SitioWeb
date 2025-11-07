@@ -64,6 +64,26 @@ function categorias(cat){
         window.location.href="../Tecnologia/Tecnologia.html"
     }
 }
+//buscador
+function buscador(){
+    let cont=0
+    const pa=document.createElement('p')
+    const items=document.querySelectorAll('#listar li')
+    pa.textContent='No se encontro la busqueda'
+    let producto=document.querySelectorAll ('.producto')
+    for (let i=0;i<producto.length;i++){
+        let b=producto[i].dataset.tipo
+        if(items==b){
+            cont++
+            producto[i].style.display='flex'
+        }else if(items!=b){
+            producto[i].style.display='none'
+        }
+    }
+    if(cont==0){
+        pa
+    }
+}
 
 
 
