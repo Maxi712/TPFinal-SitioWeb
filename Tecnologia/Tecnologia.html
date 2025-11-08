@@ -1,55 +1,81 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
-    <link rel="stylesheet" href="../css/Estilo.css">
+    <link rel="stylesheet" href="estilotec.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Seccion tecnologia</title>
     <h2>Tecnologia</h2>
     <input type="text" id="buscador">
-    <ul id="lista">
-        <li>Heladera</li>
-        <li>Cocina</li>
-        <li>Microondas</li>
-    </ul>
-    <h3><a href="OfertasTecno.html" title="Ver ofertas">Ofertas</a></h3>
-        <select id="categoria" onchange="categorias(this.value)">
-            <option value="cat" selected disabled hidden >Otras categorias:</option>
-            <option value="electrodomestico" title="Ir a muebles">Muebles</option>
-            <option value="tecnologia" title="Ir a electrodomesticos">Electrodomesticos</option>
-        </select>
-    <h3><a href="../pages/Contacto.html" tittle="Ir a contacto">Contacto</a></h3>
+
+    <h3><a href="OfertasElectro.html" title="Ver ofertas">Ofertas</a></h3>
+    <select id="categoria" onchange="categorias(this.value)">
+        <option value="cat" selected disabled hidden>Otras categorias:</option>
+        <option value="electrodomestico" title="Ir a electrodomesticos">Electrodomesticos</option>
+        <option value="mueble" title="Ir a muebles">Muebles</option>
+    </select>
+    <h3><a href="../pages/Contacto.html" title="Ir a contacto">Contacto</a></h3>
+
 </head>
 
 <body>
-    <p>Filtrar por:</p>
-    <select id="marca" name="marca" title="Seleccione marca">
-        <option value="marca" selected disable>Marca:</option>
-        <option value="samsung">Samsung</option>
-        <option value="moto">Motorola</option>
-        <option value="acer">Acer</option>
-        <option value="msi">MSI</option>
-        <option value="dell">Dell</option>
-        <option value="asus">Asus</option>
-        <option value="hp">Hp</option>
-        <option value="iphone">Iphone</option>
-        <option value="xiaomi">Xiaomi</option>
-        <option value="nintendo">Nintendo</option>
-        <option value="play">Playstation</option>
-        <option value="xbox">Xbox</option>
+    <div filtro>
+        <p>Filtrar por:</p>
+        <select onchange="filtrarPor(this.value)" id="marc" name="marc" title="Seleccione marca">
+            <option value="marca" selected disable hidden>Marca:</option>
+            <option value="HP">HP</option>
+            <option value="Philipps">Philipps</option>
+            <option value="Lg">LG</option>
+            <option value="Philco">Philco</option>
+            <option value="Florencia">Florencia</option>
 
-    </select>
-    <select id="tipo" name="tipo" title="Seleccione electrodomestico">
-        <option value="tipo" selected disable>Dispositivo:</option>
-        <option value="consola">Consola</option>
-        <option value="tablet">Tablet</option>
-        <option value="celular">Celular</option>
-        <option value="laptop">Laptop</option>
-        <option value="pc">PC</option>
+        </select>
+        <select onchange="filtrarPorT(this.value)" id="tipo" name="tipo" title="Seleccione electrodomestico">
+            <option value="tipo" selected disable hidden>Electrodomestico:</option>
+            <option value="Laptop">Laptop</option>
+            <option value="Heladera">Heladera</option>
+            <option value="Ventilador">Ventilador</option>
+            <option value="Cocina">Cocina</option>
+            <option value="Micro">Microondas</option>
+            <option value="Licuadora">Licuadora</option>
+            <option value="Lavarropas">Lavarropas</option>
 
-    </select>
-    <script src="jselect.js"></script>
+        </select>
+        <br>
+        <div class="fila">
+            <div class="producto" data-marca="HP" data-tipo="Laptop">
+                <div id="heladerap">
+                    <img id="img" width="250" height="300" src="img/laptophp.webp">
+                    <div id="info">
+                        <a href="Compraretec.html" id="descripcion"> HP Gamer Ultra Core 7 155h 32 GB RAM 1 TB Ssd Screen 15,6 FHD 1920 px x 1080 px Intel Graphics incluye Windows Laptop 15-fd1023 with gift
+                            Inverter 324L Inox- PHNT324XDI</a>
+                        <p id="marca">HP</p>
+                        <h3 id="pre">$1.500.000</h3>
+                        <button
+                            onclick="comprar('img/laptophp.webp', 'HP Gamer Ultra Core 7 155h 32 GB RAM 1 TB Ssd Screen 15,6 FHD 1920 px x 1080 px Intel Graphics incluye Windows Laptop 15-fd1023 with gift', 'HP', '$1.500.000')"
+                            id="compra">Comprar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="producto" data-marca="Florencia" data-tipo="Cocina">
+                <div id="cocinaf">
+                    <img id="img" width="250" height="300" src="../img/cocinaf.webp">
+                    <div id="info">
+                        <a href="Compraretec.html" id="descripcion">Cocina Industrial Florencia 5838 Inoxidable Con
+                            Refractarios Color Acero Inoxidable</a>
+                        <p id="marca">Florencia</p>
+                        <h3 id="pre">$552.125</h3>
+                        <button
+                            onclick="comprar('../img/cocinaf.webp', 'Cocina Industrial Florencia 5838 Inoxidable Con Refractarios Color Acero Inoxidable', 'Florencia', '$552.125')"
+                            id="compra">Comprar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="jselect.js"></script>
+        <script src="validarForms"></script>
+        <script src="filtro.js"></script>
 </body>
 
 </html>

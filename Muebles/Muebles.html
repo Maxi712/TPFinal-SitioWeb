@@ -2,44 +2,79 @@
 <html lang="es">
 
 <head>
-    <link rel="stylesheet" href="../css/Estilo.css">
+    <link rel="stylesheet" href="estilomue.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Seccion muebles</title>
+    <title>Seccion Muebless</title>
     <h2>Muebles</h2>
-    <textarea>buscar productos</textarea>
+    <input type="text" id="buscador">
+
     <h3><a href="OfertasMuebles.html" title="Ver ofertas">Ofertas</a></h3>
-        <select id="categoria" onchange="categorias(this.value)">
-            <option value="cat" selected disabled hidden >Otras categorias:</option>
-            <option value="electrodomestico" title="Ir a electrodomesticos">Electrodomesticos</option>
-            <option value="tecnologia" title="Ir a tecnologia">Tecnologia</option>
-        </select>
-    <h3><a href="../pages/Contacto.html" tittle="Ir a contacto">Contacto</a></h3>
+    <select id="categoria" onchange="categorias()">
+        <option value="cat" selected disabled hidden>Otras categorias:</option>
+        <option value="electrodomestico" title="Ir a muebles">Electrodomesticos</option>
+        <option value="tecnologia" title="Ir a tecnologia">Tecnologia</option>
+    </select>
+    <h3><a href="../pages/Contacto.html" title="Ir a contacto">Contacto</a></h3>
+
 </head>
 
 <body>
-    <p>Filtrar por:</p>
-    <select id="marca" name="marca" title="Seleccione marca">
-        <option value="marca" selected disable>Marca:</option>
-        <option value="fon">Fontenla</option>
-        <option value="ric">Ricchezze</option>
-        <option value="acer">Poliform</option>
-        <option value="knoll">Knoll</option>
-        <option value="sommier">Sommier</option>
-        <option value="simmons">Simmons</option>
+    <div filtro>
+        <p>Filtrar por:</p>
+        <select onchange="filtrarPor(this.value)" id="marc" name="marc" title="Seleccione marca">
+            <option value="marca" selected disable hidden>Marca:</option>
+            <option value="Sommier">Sommier</option>
+            <option value="Philipps">Philipps</option>
+            <option value="Lg">LG</option>
+            <option value="Philco">Philco</option>
+            <option value="Florencia">Florencia</option>
 
-    </select>
-    <select id="tipo" name="tipo" title="Seleccione electrodomestico">
-        <option value="funcion" selected disable>Tipo de mueble:</option>
-        <option value="consola">Consola</option>
-        <option value="tablet">Tablet</option>
-        <option value="celular">Celular</option>
-        <option value="laptop">Laptop</option>
-        <option value="pc">PC</option>
+        </select>
+        <select onchange="filtrarPorT(this.value)" id="tipo" name="tipo" title="Seleccione electrodomestico">
+            <option value="tipo" selected disable hidden>Electrodomestico:</option>
+            <option value="Aire">Aire acondicionado</option>
+            <option value="Heladera">Heladera</option>
+            <option value="Ventilador">Ventilador</option>
+            <option value="Cocina">Cocina</option>
+            <option value="Micro">Microondas</option>
+            <option value="Licuadora">Licuadora</option>
+            <option value="Lavarropas">Lavarropas</option>
 
-    </select>
-    <script src="jselect.js"></script>
-
+        </select>
+        <br>
+        <div class="fila">
+            <div class="producto" data-marca="Philco" data-tipo="Heladera">
+                <div id="camas">
+                    <img class="img" width="250" height="300" src="img/cama s.webp">
+                    <div id="info">
+                        <a href="Compraremue.html" id="descripcion">Sommier Colchon 2 Dos Plazas Resortes Somier Colchones Elite Color Bordó</a>
+                        <p id="marca">Sommier</p>
+                        <h3 id="pre">$366.679</h3>
+                        <button
+                            onclick="comprar('img/cama s.webp', 'Sommier Colchon 2 Dos Plazas Resortes Somier Colchones Elite Color Bordó', 'Sommier', '$366.679')"
+                            id="compra">Comprar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="producto" data-marca="Florencia" data-tipo="Cocina">
+                <div id="cocinaf">
+                    <img id="img" width="250" height="300" src="../img/cocinaf.webp">
+                    <div id="info">
+                        <a href="Compraremue.html" id="descripcion">Cocina Industrial Florencia 5838 Inoxidable Con
+                            Refractarios Color Acero Inoxidable</a>
+                        <p class="marca">Florencia</p>
+                        <h3 class="pre">$552.125</h3>
+                        <button
+                            onclick="comprar('../img/cocinaf.webp', 'Cocina Industrial Florencia 5838 Inoxidable Con Refractarios Color Acero Inoxidable', 'Florencia', '$552.125')"
+                            id="compra">Comprar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="jselect.js"></script>
+        <script src="validarForms"></script>
+        <script src="filtro.js"></script>
 </body>
 
 </html>
