@@ -134,3 +134,18 @@ textarea {
     padding: 10px;
     border-radius: 5px;
 }
+
+#categoria {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 1px solid gold;
+  background-color: rgb(255, 213, 0); 
+  color: black;
+  font-weight: bold;
+  border-radius: 5px;
+  margin-top: 10px;
+  cursor: pointer;
+  appearance: none; 
+}
