@@ -2,13 +2,14 @@ function validarFormulario(event) {
     event.preventDefault();
     const nombre = document.getElementById('nombre').value.trim();
     const email = document.getElementById('email').value.trim();
+    const telefono=document.getElementById('telefono').value.trim();
     const mensaje = document.getElementById('mensaje').value.trim();
     const resultadoDiv = document.getElementById('resultadoValidacion');
     resultadoDiv.innerHTML = '';
     let errores = [];
     if (nombre === "") {
         errores.push("Falta completar el campo del nombre.");
-    } else if (nombre.lenght > 50) {
+    } else if (nombre.length > 50) {
         errores.push("El nombre no debe excederse de 50 caracteres.");
     }
     if (mensaje === "") {
@@ -17,6 +18,10 @@ function validarFormulario(event) {
     const regexEmail = /[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}/;
     if (!regexEmail.test(email)) {
         errores.push("El email no es valido.");
+    }
+    const regextelefono = /^[0-9]{7,15}$/;
+    if (!regextelefono.test(telefono)) {
+        errores.push("El telefono no es valido.");
     }
     if (errores.length > 0) {
         const errorContainer = document.createElement('div');
@@ -35,7 +40,7 @@ function validarFormulario(event) {
         return false;
     } else {
         const mensajeExito = document.createElement('p');
-        mensajeExito.className = 'seccess-message';
+        mensajeExito.className = 'success-message';
         mensajeExito.textContent = '¡Formulario enviado con exito!'
         resultadoDiv.appendChild(mensajeExito);
         document.getElementById('formularioContacto').reset();
@@ -43,4 +48,3 @@ function validarFormulario(event) {
     }
 }
 
-<categorias onclick="windows.open('Muebles.html', '_blank')">Muebles</categorias>

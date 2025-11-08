@@ -125,3 +125,12 @@ textarea {
     cursor: pointer;
     align-self: flex-start;
 }
+.success-message{
+    color: green;
+    font-weight: bold;
+    margin-top: 20px;
+    text-align: center;
+    background-color: rgba(0,255,0,0.1);
+    padding: 10px;
+    border-radius: 5px;
+}
