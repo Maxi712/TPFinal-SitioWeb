@@ -54,6 +54,22 @@ function filtrarPorT(filtro){
     }
 
 }
+const buscador=document.getElementById('buscador')
+document.addEventListener('input',b=>{
+    if (b.target===buscador){
+        const valor= buscador.value.toLowerCase()
+        const producto=document.querySelectorAll('.producto')
+        for (let i=0;i<producto.length;i++){
+        let tipo=producto[i].dataset.tipo.toLowerCase()
+        if(valor===tipo){
+            producto[i].style.display='flex'
+        }else{
+            producto[i].style.display='none'
+        }
+        
+    }
+    }
+})
 
 function categorias(cat){
     if(cat==='electrodomestico'){

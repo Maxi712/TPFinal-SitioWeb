@@ -25,18 +25,18 @@
         <select onchange="filtrarPor(this.value)" id="marc" name="marc" title="Seleccione marca">
             <option value="marca" selected disable hidden>Marca:</option>
             <option value="HP">HP</option>
-            <option value="Philipps">Philipps</option>
-            <option value="Lg">LG</option>
-            <option value="Philco">Philco</option>
+            <option value="PS">Playstation</option>
+            <option value="Samsung">Samsung</option>
+            <option value="Lenovo">Lenovo</option>
             <option value="Florencia">Florencia</option>
 
         </select>
         <select onchange="filtrarPorT(this.value)" id="tipo" name="tipo" title="Seleccione electrodomestico">
             <option value="tipo" selected disable hidden>Electrodomestico:</option>
             <option value="Laptop">Laptop</option>
-            <option value="Heladera">Heladera</option>
-            <option value="Ventilador">Ventilador</option>
-            <option value="Cocina">Cocina</option>
+            <option value="Consola">Consola</option>
+            <option value="Celular">Celular</option>
+            <option value="Tablet">Tablet</option>
             <option value="Micro">Microondas</option>
             <option value="Licuadora">Licuadora</option>
             <option value="Lavarropas">Lavarropas</option>
@@ -49,7 +49,7 @@
                     <img id="img" width="250" height="300" src="img/laptophp.webp">
                     <div id="info">
                         <a href="Compraretec.html" id="descripcion"> HP Gamer Ultra Core 7 155h 32 GB RAM 1 TB Ssd Screen 15,6 FHD 1920 px x 1080 px Intel Graphics incluye Windows Laptop 15-fd1023 with gift
-                            Inverter 324L Inox- PHNT324XDI</a>
+                            </a>
                         <p id="marca">HP</p>
                         <h3 id="pre">$1.500.000</h3>
                         <button
@@ -58,16 +58,45 @@
                     </div>
                 </div>
             </div>
-            <div class="producto" data-marca="Florencia" data-tipo="Cocina">
+            <div class="producto" data-marca="PS" data-tipo="Consola">
                 <div id="cocinaf">
-                    <img id="img" width="250" height="300" src="../img/cocinaf.webp">
+                    <img id="img" width="250" height="300" src="img/ps5.webp">
                     <div id="info">
-                        <a href="Compraretec.html" id="descripcion">Cocina Industrial Florencia 5838 Inoxidable Con
-                            Refractarios Color Acero Inoxidable</a>
-                        <p id="marca">Florencia</p>
-                        <h3 id="pre">$552.125</h3>
+                        <a href="Compraretec.html" id="descripcion">Sony Playstation 5 Slim 1tb Standard Bundle Ratchet & Clank Blanco/Negro
+                            </a>
+                        <p id="marca">Playstation</p>
+                        <h3 id="pre">$1.499.000</h3>
                         <button
-                            onclick="comprar('../img/cocinaf.webp', 'Cocina Industrial Florencia 5838 Inoxidable Con Refractarios Color Acero Inoxidable', 'Florencia', '$552.125')"
+                            onclick="comprar('img/ps5.webp', 'Sony Playstation 5 Slim 1tb Standard Bundle Ratchet & Clank Blanco/Negro', 'Playstation', '$1.499.000')"
+                            id="compra">Comprar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="fila">
+            <div class="producto" data-marca="Samsung" data-tipo="Celular">
+                <div id="heladerap">
+                    <img id="img" width="250" height="300" src="img/ts.webp">
+                    <div id="info">
+                        <a href="Compraretec.html" id="descripcion"> Samsung Galaxy A56 5G Sim 5G Dual SIM 256 GB awesome graphite 12 GB RAM
+                            </a>
+                        <p id="marca">Samsung</p>
+                        <h3 id="pre">$724.999</h3>
+                        <button
+                            onclick="comprar('img/ts', 'Samsung Galaxy A56 5G Sim 5G Dual SIM 256 GB awesome graphite 12 GB RAM', 'Samsung', '$724.999')"
+                            id="compra">Comprar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="producto" data-marca="Lenovo" data-tipo="Tablet">
+                <div id="cocinaf">
+                    <img id="img" width="250" height="300" src="img/tl.webp">
+                    <div id="info">
+                        <a href="Compraretec.html" id="descripcion">Tablet 11 Lenovo Tab M11 128gb 8gb Verde Funda + Tab Pen Color Verde claro</a>
+                        <p id="marca">Lenovo</p>
+                        <h3 id="pre">$543.000</h3>
+                        <button
+                            onclick="comprar('img/tl.webp', 'Tablet 11 Lenovo Tab M11 128gb 8gb Verde Funda + Tab Pen Color Verde claro', 'Lenovo', '$543.000')"
                             id="compra">Comprar</button>
                     </div>
                 </div>
