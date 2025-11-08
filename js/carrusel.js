@@ -1,6 +1,9 @@
 const imagenes = [
-    'img/heladerap.webp',
-    'img/cocinaf.webp'
+    'imgcar/heladerap.webp',
+    'imgcar/ps5.webp',
+    'imgcar/escri.webp',
+    'imgcar/micro.webp'
+
 ];
 let indiceActual = 0;
 const imagenElemento = document.getElementById('imagenCarrusel');

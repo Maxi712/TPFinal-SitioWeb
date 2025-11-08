@@ -9,8 +9,8 @@
     <h2>Muebles</h2>
     <input type="text" id="buscador">
 
-    <h3><a href="OfertasMuebles.html" title="Ver ofertas">Ofertas</a></h3>
-    <select id="categoria" onchange="categorias()">
+    <h3><a href="../index.html" title="Volver a inicio">Inicio</a></h3>
+    <select id="categoria" onchange="categorias(this.value)">
         <option value="cat" selected disabled hidden>Otras categorias:</option>
         <option value="electrodomestico" title="Ir a muebles">Electrodomesticos</option>
         <option value="tecnologia" title="Ir a tecnologia">Tecnologia</option>
@@ -25,18 +25,18 @@
         <select onchange="filtrarPor(this.value)" id="marc" name="marc" title="Seleccione marca">
             <option value="marca" selected disable hidden>Marca:</option>
             <option value="Sommier">Sommier</option>
-            <option value="Philipps">Philipps</option>
-            <option value="Lg">LG</option>
-            <option value="Philco">Philco</option>
+            <option value="Pektra">Pektra</option>
+            <option value="DX">DX</option>
+            <option value="Chenille">Chenille</option>
             <option value="Florencia">Florencia</option>
 
         </select>
         <select onchange="filtrarPorT(this.value)" id="tipo" name="tipo" title="Seleccione electrodomestico">
             <option value="tipo" selected disable hidden>Electrodomestico:</option>
-            <option value="Aire">Aire acondicionado</option>
-            <option value="Heladera">Heladera</option>
-            <option value="Ventilador">Ventilador</option>
-            <option value="Cocina">Cocina</option>
+            <option value="Cama">Cama</option>
+            <option value="Ropero">Ropero</option>
+            <option value="Escritorio">Escritorio</option>
+            <option value="Sillon">Sillon</option>
             <option value="Micro">Microondas</option>
             <option value="Licuadora">Licuadora</option>
             <option value="Lavarropas">Lavarropas</option>
@@ -44,7 +44,7 @@
         </select>
         <br>
         <div class="fila">
-            <div class="producto" data-marca="Philco" data-tipo="Heladera">
+            <div class="producto" data-marca="Sommier" data-tipo="Cama">
                 <div id="camas">
                     <img class="img" width="250" height="300" src="img/cama s.webp">
                     <div id="info">
@@ -57,16 +57,43 @@
                     </div>
                 </div>
             </div>
-            <div class="producto" data-marca="Florencia" data-tipo="Cocina">
-                <div id="cocinaf">
-                    <img id="img" width="250" height="300" src="../img/cocinaf.webp">
+            <div class="producto" data-marca="Pektra" data-tipo="Ropero">
+                <div id="roperok">
+                    <img id="img" width="250" height="300" src="img/roperop.webp">
                     <div id="info">
-                        <a href="Compraremue.html" id="descripcion">Cocina Industrial Florencia 5838 Inoxidable Con
-                            Refractarios Color Acero Inoxidable</a>
-                        <p class="marca">Florencia</p>
-                        <h3 class="pre">$552.125</h3>
+                        <a href="Compraremue.html" id="descripcion">Placard Ropero 3 Puertas 2 Cajones 182 Cm Blanco Melamina</a>
+                        <p class="marca">Pektra</p>
+                        <h3 class="pre">$125.229</h3>
                         <button
-                            onclick="comprar('../img/cocinaf.webp', 'Cocina Industrial Florencia 5838 Inoxidable Con Refractarios Color Acero Inoxidable', 'Florencia', '$552.125')"
+                            onclick="comprar('img/roperop.webp', 'Placard Ropero 3 Puertas 2 Cajones 182 Cm Blanco Melamina', 'Pektra', '$125.229')"
+                            id="compra">Comprar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="fila">
+            <div class="producto" data-marca="DX" data-tipo="Escritorio">
+                <div id="escri">
+                    <img class="img" width="250" height="300" src="img/escri.webp">
+                    <div id="info">
+                        <a href="Compraremue.html" id="descripcion">Escritorio Articulado Blanco Moderno Oficina 1 Cajon Desk Para Oficina</a>
+                        <p id="marca">DX</p>
+                        <h3 id="pre">$116.159</h3>
+                        <button
+                            onclick="comprar('img/escri.webp', 'Escritorio Articulado Blanco Moderno Oficina 1 Cajon Desk Para Oficina', 'DX', '$116.159')"
+                            id="compra">Comprar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="producto" data-marca="Chenille" data-tipo="Sillon">
+                <div id="sillon">
+                    <img id="img" width="250" height="300" src="img/sillonc.webp">
+                    <div id="info">
+                        <a href="Compraremue.html" id="descripcion">Sillón Poltrona Reclinable Chenille Liso Beige</a>
+                        <p class="marca">Chenille</p>
+                        <h3 class="pre">$237.650</h3>
+                        <button
+                            onclick="comprar('img/sillonc.webp', 'Sillón Poltrona Reclinable Chenille Liso Beige', 'Chenille', '$237.650')"
                             id="compra">Comprar</button>
                     </div>
                 </div>
