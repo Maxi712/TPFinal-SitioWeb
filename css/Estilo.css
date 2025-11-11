@@ -22,7 +22,7 @@ h3 {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0);
+    background-color: rgba(10, 10, 10, 0);
     padding: 15px 20px;
     width: 80%;
     max-width: 1000px;
@@ -42,7 +42,7 @@ h3 {
 }
 
 .menu-flexbox a:hover {
-    background-color: rgb(255, 215, 0, 0.2);
+    background-color: rgba(62, 58, 35, 0.2);
     color: white;
 }
 
@@ -78,7 +78,7 @@ textarea {
     width: 80%;
     max-width: 500px;
     margin: 40px auto;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(12, 12, 12, 0.796);
     padding: 20px;
     border-radius: 8px;
     border: 1px solid rgba(255, 215, 0, 0.5);
@@ -112,18 +112,19 @@ textarea {
     border: none;
     border-bottom: 1px solid gold;
     background-color: rgb(255, 213, 0);
-    color: black;
+    color: rgb(5, 5, 5);
     margin-top: 5px;
 }
 
 #formularioContacto input[type="submit"] {
     background-color: gold;
-    color: black;
+    color: rgb(6, 6, 6);
     padding: 10px 15px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    align-self: flex-start;
+    align-self: center;
+    width: 200px;
 }
 .success-message{
     color: green;
@@ -134,18 +135,33 @@ textarea {
     padding: 10px;
     border-radius: 5px;
 }
+.error-box{
+    color: gold;
+}
+#listaErrores{
+    color: red;
+}
+.datos-cargados{
+    background-color: rgba(0,255,0,0.1);
+    color: green;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.datos-cargados li{
+    margin-bottom: 5px;
+}
 
 #categoria {
-  width: 100%;
-  padding: 8px;
-  box-sizing: border-box;
-  border: none;
-  border-bottom: 1px solid gold;
-  background-color: rgb(255, 213, 0); 
-  color: black;
-  font-weight: bold;
-  border-radius: 5px;
-  margin-top: 10px;
-  cursor: pointer;
-  appearance: none; 
+    width: 200px;
+    padding: 8px;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 1px solid gold;
+    background-color: rgb(255, 213, 0); 
+    color: rgb(12, 11, 11);
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+    appearance: none; 
 }
