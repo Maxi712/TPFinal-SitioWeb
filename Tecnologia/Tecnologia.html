@@ -8,21 +8,21 @@
     <title>Seccion tecnologia</title>
     <h2>Tecnologia</h2>
     <input type="text" id="buscador">
-
-    <h3><a href="../index.html" title="Volver a inicio">Inicio</a></h3>
-    <select id="categoria" onchange="categorias(this.value)">
-        <option value="cat" selected disabled hidden>Otras categorias:</option>
-        <option value="electrodomestico" title="Ir a electrodomesticos">Electrodomesticos</option>
-        <option value="mueble" title="Ir a muebles">Muebles</option>
-    </select>
-    <h3><a href="../pages/Contacto.html" title="Ir a contacto">Contacto</a></h3>
-
+    <div class="menu">
+        <select id="categoria" onchange="categorias(this.value)">
+            <option value="cat" selected disabled hidden>Otras categorias:</option>
+            <option value="electrodomestico" title="Ir a electrodomesticos">Electrodomesticos</option>
+            <option value="mueble" title="Ir a muebles">Muebles</option>
+        </select>
+        <h3><a href="../index.html" title="Volver a inicio">Inicio</a></h3>
+        <h3><a href="../pages/Contacto.html" title="Ir a contacto">Contacto</a></h3>
+    </div>
 </head>
 
 <body>
-    <div filtro>
+    <div id="filtrado">
         <p>Filtrar por:</p>
-        <select onchange="filtrarPor(this.value)" id="marc" name="marc" title="Seleccione marca">
+        <select class="filtro" onchange="filtrarPor(this.value)" id="marc" name="marc" title="Seleccione marca">
             <option value="marca" selected disable hidden>Marca:</option>
             <option value="HP">HP</option>
             <option value="PS">Playstation</option>
@@ -31,7 +31,7 @@
             <option value="Florencia">Florencia</option>
 
         </select>
-        <select onchange="filtrarPorT(this.value)" id="tipo" name="tipo" title="Seleccione electrodomestico">
+        <select class="filtro" onchange="filtrarPorT(this.value)" id="tipo" name="tipo" title="Seleccione electrodomestico">
             <option value="tipo" selected disable hidden>Electrodomestico:</option>
             <option value="Laptop">Laptop</option>
             <option value="Consola">Consola</option>
@@ -42,6 +42,7 @@
             <option value="Lavarropas">Lavarropas</option>
 
         </select>
+    </div>    
         <br>
         <div class="fila">
             <div class="producto" data-marca="HP" data-tipo="Laptop">

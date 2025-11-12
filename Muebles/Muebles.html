@@ -7,22 +7,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Seccion Muebless</title>
     <h2>Muebles</h2>
+    
     <input type="text" id="buscador">
-
-    <h3><a href="../index.html" title="Volver a inicio">Inicio</a></h3>
-    <select id="categoria" onchange="categorias(this.value)">
-        <option value="cat" selected disabled hidden>Otras categorias:</option>
-        <option value="electrodomestico" title="Ir a muebles">Electrodomesticos</option>
-        <option value="tecnologia" title="Ir a tecnologia">Tecnologia</option>
-    </select>
-    <h3><a href="../pages/Contacto.html" title="Ir a contacto">Contacto</a></h3>
-
+    <div class="menu">
+        <select id="categoria" onchange="categorias(this.value)">
+            <option value="cat" selected disabled hidden>Otras categorias:</option>
+            <option value="electrodomestico" title="Ir a muebles">Electrodomesticos</option>
+            <option value="tecnologia" title="Ir a tecnologia">Tecnologia</option>
+        </select>
+        <h3><a href="../index.html" title="Volver a inicio">Inicio</a></h3>
+        <h3><a href="../pages/Contacto.html" title="Ir a contacto">Contacto</a></h3>
+    </div>
 </head>
 
 <body>
-    <div filtro>
+    <div id="filtrado">
         <p>Filtrar por:</p>
-        <select onchange="filtrarPor(this.value)" id="marc" name="marc" title="Seleccione marca">
+        <select class="filtro" onchange="filtrarPor(this.value)" id="marc" name="marc" title="Seleccione marca">
             <option value="marca" selected disable hidden>Marca:</option>
             <option value="Sommier">Sommier</option>
             <option value="Pektra">Pektra</option>
@@ -31,7 +32,7 @@
             <option value="Florencia">Florencia</option>
 
         </select>
-        <select onchange="filtrarPorT(this.value)" id="tipo" name="tipo" title="Seleccione electrodomestico">
+        <select class="filtro" onchange="filtrarPorT(this.value)" id="tipo" name="tipo" title="Seleccione electrodomestico">
             <option value="tipo" selected disable hidden>Electrodomestico:</option>
             <option value="Cama">Cama</option>
             <option value="Ropero">Ropero</option>
@@ -42,6 +43,7 @@
             <option value="Lavarropas">Lavarropas</option>
 
         </select>
+    </div>    
         <br>
         <div class="fila">
             <div class="producto" data-marca="Sommier" data-tipo="Cama">

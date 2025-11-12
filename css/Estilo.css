@@ -44,6 +44,18 @@ h3 {
 .menu-flexbox a:hover {
     background-color: rgba(62, 58, 35, 0.2);
     color: white;
+    text-decoration: gold;
+}
+.info{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border: gold 3px solid;
+    border-radius: 10px;
+}
+.info p{
+    color: gold;
 }
 
 #carrusel {
@@ -163,5 +175,5 @@ textarea {
     border-radius: 5px;
     margin-top: 10px;
     cursor: pointer;
-    appearance: none; 
+    
 }
