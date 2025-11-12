@@ -65,12 +65,25 @@ h3 {
     margin: 20px auto;
     width: 80%;
     max-width: 900px;
+    border-color: gold 200px;
+}
+#carrusel button{
+    width: 50px;
+    height: 200px;
+    background-color: gold;
+}
+
+#carrusel button:hover{
+    width: 60px;
+    height: 210px;
+    background-color: rgb(247, 246, 241);
 }
 
 #imagenCarrusel {
     width: 100%;
     height: auto;
     max-height: 400px;
+    
 }
 
 
@@ -174,6 +187,5 @@ textarea {
     font-weight: bold;
     border-radius: 5px;
     margin-top: 10px;
-    cursor: pointer;
-    
+    cursor: pointer; 
 }
