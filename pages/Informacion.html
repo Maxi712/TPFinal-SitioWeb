@@ -7,6 +7,17 @@
     <title>Informacion</title>
 </head>
 <body>
+    <h2>Menu:</h2>
+    <div class="menu-flexbox">
+        <select id="categoria" onchange="categoriascon(this.value)">
+            <option value="cat" selected disabled hidden>Categorias:</option>
+            <option value="mueble" title="Ir a muebles">Muebles</option>
+            <option value="electrodomestico" title="Ir a electrodomesticos">Electrodomesticos</option>
+            <option value="tecnologia" title="Ir a tecnologia">Tecnologia</option>
+        </select>
+        <a href="../pages/Contacto.html" title="Ir a contacto">Contacto</a>
+        <a href="../index.html"  title="Ir a inicio">Inicio</a>
+    </div><br>
     <h1>Proyecto: Tiendita online</h1>
 
     <h2>Categorias:</h2>
@@ -14,5 +25,6 @@
     <h2>Muebles</h2>
     <h2>Tecnologia</h2>
     <h3>Este proyecto consiste en una tienda online multiproducto diseñada para ofrecer una experiencia de navegación clara, moderna y funcional. El sitio está dividido en secciones como Muebles, Electrodomésticos y Tecnología, cada una con su propia página dedicada. La navegación se realiza mediante un menú flexible y un selector dinámico de categorías. Además, incluye un formulario de contacto con validación personalizada en JavaScript, que permite a los usuarios enviar consultas de manera segura y controlada. El diseño visual combina colores contrastantes y estructura responsiva, pensado para adaptarse a distintos dispositivos y brindar una experiencia profesional. Es un proyecto ideal para demostrar habilidades en HTML, CSS, JavaScript y organización de sitios web reales.</h3>
+    <script src="../js/select.js"></script>
 </body>
 </html>
